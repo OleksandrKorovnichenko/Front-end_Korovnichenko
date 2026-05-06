@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Освіта та навички Олександра Коровніченка — коротко.">
+    <meta name="author" content="Олександр Коровніченко">
+    <title>Про мене — Портфоліо Олександра Коровніченка</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page">
+        <header class="site-header">
+            <div class="header-inner">
+                <h1 class="site-title">Про мене</h1>
+                <nav class="site-nav" aria-label="Головна навігація">
+                    <input type="checkbox" id="nav-toggle" class="menu-toggle">
+                    <label for="nav-toggle" class="hamburger" aria-label="Відкрити або закрити меню">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <ul class="nav-list">
+                        <li><a class="nav-link" href="index.html">Головна</a></li>
+                        <li><strong class="nav-current" aria-current="page">Про мене</strong></li>
+                        <li><a class="nav-link" href="contacts.html">Контакти</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="content">
+            <section class="section-animate" aria-labelledby="story-heading">
+                <h2 id="story-heading">Коротко</h2>
+                <p>Працюю Python-розробником та паралельно навчаюся.</p>
+
+                <article aria-labelledby="edu-heading">
+                    <h3 id="edu-heading">Де навчався</h3>
+                    <p><em>Національний аерокосмічний університет «Харківський авіаційний інститут»</em> — бакалавр, інженерія та програмування інфокомунікаційних систем.</p>
+                </article>
+
+                <article aria-labelledby="work-heading">
+                    <h3 id="work-heading">Досвід</h3>
+                    <p>Розробка на Python: API, бази даних, командна робота, розробка веб-додатків.</p>
+                </article>
+            </section>
+
+            <section class="section-animate" aria-labelledby="skills-table-heading">
+                <h2 id="skills-table-heading">Навички</h2>
+                <div class="table-wrap">
+                    <table>
+                        <caption>Технології</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Технологія</th>
+                                <th scope="col">Рівень</th>
+                                <th scope="col">Досвід</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Python</td>
+                                <td>Високий</td>
+                                <td>З 2019</td>
+                            </tr>
+                            <tr>
+                                <td>Git</td>
+                                <td>Високий</td>
+                                <td>З 2019</td>
+                            </tr>
+                            <tr>
+                                <td>HTML</td>
+                                <td>Базовий</td>
+                                <td>Навчаюся</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="section-animate" aria-labelledby="facts-heading">
+                <h2 id="facts-heading">Ще трохи</h2>
+                <dl>
+                    <dt>Місто</dt>
+                    <dd>Київ.</dd>
+                    <dt>Мови</dt>
+                    <dd>Українська; англійська — B2.</dd>
+                </dl>
+            </section>
+
+            <section class="section-animate" aria-labelledby="pic-heading">
+                <h2 id="pic-heading">Ще фото</h2>
+                <figure>
+                    <img src="images/workspace.jpg" width="640" height="400" alt="Ілюстрація робочого місця">
+                    <figcaption>Ілюстрація.</figcaption>
+                </figure>
+            </section>
+        </main>
+
+        <aside class="sidebar" aria-labelledby="aside-fact">
+            <h2 id="aside-fact">Факт</h2>
+            <p>Працюю на проекті Payabl.</p>
+            <p><a class="nav-link" href="index.html">На головну</a></p>
+        </aside>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Олександр Коровніченко.</p>
+            <p><small>Навчальний проєкт на HTML5.</small></p>
+            <p><a class="nav-link" href="index.html">На головну</a></p>
+        </footer>
+    </div>
+</body>
+</html>

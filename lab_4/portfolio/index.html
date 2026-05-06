@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Коротко про Олександра Коровніченка та його навчання.">
+    <meta name="author" content="Олександр Коровніченко">
+    <title>Головна — Портфоліо Олександра Коровніченка</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page">
+        <header class="site-header">
+            <div class="header-inner">
+                <h1 class="site-title">Олександр Коровніченко</h1>
+                <nav class="site-nav" aria-label="Головна навігація">
+                    <input type="checkbox" id="nav-toggle" class="menu-toggle">
+                    <label for="nav-toggle" class="hamburger" aria-label="Відкрити або закрити меню">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <ul class="nav-list">
+                        <li><strong class="nav-current" aria-current="page">Головна</strong></li>
+                        <li><a class="nav-link" href="about.html">Про мене</a></li>
+                        <li><a class="nav-link" href="contacts.html">Контакти</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="content">
+            <section class="section-animate" aria-labelledby="intro-heading">
+                <h2 id="intro-heading">Вітаю</h2>
+                <p>Я — <strong>Олександр Коровніченко</strong>. Зараз працюю <em>Python-розробником</em> та паралельно навчаюся.</p>
+                <blockquote>
+                    <p>Проживаю в Києві.</p>
+                </blockquote>
+            </section>
+
+            <section class="section-animate" aria-labelledby="focus-heading">
+                <h2 id="focus-heading">Що зараз</h2>
+                <ol>
+                    <li>Навчання на 3 курсі.</li>
+                    <li>Працюю на цікавому проекті.</li>
+                </ol>
+            </section>
+
+            <section class="section-animate" aria-labelledby="projects-heading">
+                <h2 id="projects-heading">Навички</h2>
+                <div class="projects-grid">
+                    <article class="card">
+                        <h3>Python API</h3>
+                        <p>REST-сервіси, валідація даних, інтеграція з базами.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Командна розробка</h3>
+                        <p>Git, code review, спільні релізи та документація.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Веб-інтерфейси</h3>
+                        <p>Освоєння сучасної верстки: семантика, доступність, адаптив.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section-animate" aria-labelledby="photo-heading">
+                <h2 id="photo-heading">Фото</h2>
+                <figure class="figure-photo">
+                    <img src="images/portrait.jpeg" alt="Портрет Олександра Коровніченка">
+                    <figcaption>Я — Олександр Коровніченко.</figcaption>
+                </figure>
+            </section>
+
+            <section class="section-animate" aria-labelledby="clip-heading">
+                <h2 id="clip-heading">Відео</h2>
+                <figure>
+                    <video class="video-embed" controls preload="metadata">
+                        <source src="video/intro.mp4" type="video/mp4">
+                        Ваш браузер не підтримує відтворення цього відео у вбудованому переглядачі.
+                    </video>
+                    <figcaption>Демонстраційне відео.</figcaption>
+                </figure>
+            </section>
+
+            <section class="section-animate" aria-labelledby="lab4-heading">
+                <h2 id="lab4-heading">Лабораторна 4 — JavaScript</h2>
+                <p>Завдання з курсу: змінні, умови, масиви, функції, об’єкти, ланцюжки методів, рядки. Повний вивід також у <strong>консолі</strong> браузера (<kbd>F12</kbd> → Console).</p>
+                <pre class="lab-output" id="lab-output" tabindex="0" aria-label="Журнал виконання скриптів лабораторної 4"></pre>
+            </section>
+        </main>
+
+        <aside class="sidebar" aria-labelledby="aside-quick">
+            <h2 id="aside-quick">Далі</h2>
+            <p>Освіта й навички — на сторінці <a class="nav-link" href="about.html">Про мене</a>.</p>
+            <p><a class="button button--pulse" href="contacts.html">Написати мені</a></p>
+        </aside>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Олександр Коровніченко.</p>
+            <p><small>Навчальний проєкт на HTML5.</small></p>
+        </footer>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
