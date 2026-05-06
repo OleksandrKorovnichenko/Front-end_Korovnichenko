@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Контакти Олександра Коровніченка та форма зворотного зв’язку.">
+    <meta name="author" content="Олександр Коровніченко">
+    <title>Контакти — Портфоліо Олександра Коровніченка</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Контакти</h1>
+        <nav aria-label="Головна навігація">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про мене</a></li>
+                <li><strong aria-current="page">Контакти</strong></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section aria-labelledby="direct-heading">
+            <h2 id="direct-heading">Зв’язатися напряму</h2>
+            <address>
+                Email:
+                <a href="mailto:o.v.korovnichenko@student.khai.edu">o.v.korovnichenko@student.khai.edu</a><br>
+                Телефон:
+                <a href="tel:+380977635780">+38 (097) 763-57-80</a><br>
+                Місто: Київ, Україна.
+            </address>
+        </section>
+
+        <section aria-labelledby="form-heading">
+            <h2 id="form-heading">Форма зворотного зв’язку</h2>
+            <p>Напишіть повідомлення (навчальна форма).</p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Контактна інформація</legend>
+                    <p>
+                        <label for="name">Ім’я:</label>
+                        <input type="text" id="name" name="name" placeholder="Введіть ваше ім’я" required>
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Повідомлення</legend>
+                    <p>
+                        <label for="subject">Тема звернення:</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">— Оберіть тему —</option>
+                            <option value="general">Загальне питання</option>
+                            <option value="cooperation">Співпраця чи проєкт</option>
+                            <option value="feedback">Відгук щодо сайту</option>
+                        </select>
+                    </p>
+                    <p>Тип звернення:</p>
+                    <p>
+                        <input type="radio" id="message_type_question" name="message_type" value="question" required>
+                        <label for="message_type_question">Питання</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="message_type_suggestion" name="message_type" value="suggestion">
+                        <label for="message_type_suggestion">Пропозиція</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="message_type_complaint" name="message_type" value="complaint">
+                        <label for="message_type_complaint">Скарга</label>
+                    </p>
+                    <p>
+                        <label for="message">Текст повідомлення:</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Опишіть ваш запит" required></textarea>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <label for="consent">
+                        <input type="checkbox" id="consent" name="consent" value="yes" required>
+                        Я погоджуюсь на обробку персональних даних для відповіді на це звернення.
+                    </label>
+                </p>
+
+                <button type="submit">Надіслати</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Олександр Коровніченко.</p>
+        <p><small>Навчальний проєкт на HTML5.</small></p>
+        <p><a href="index.html">На головну</a></p>
+    </footer>
+</body>
+</html>

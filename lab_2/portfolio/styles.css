@@ -1,0 +1,348 @@
+/* ===== Загальні стилі ===== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.55;
+    color: #e5e7eb;
+    background: linear-gradient(180deg, #0f172a, #020617 55%, #020617);
+}
+
+img,
+video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.9rem;
+}
+
+main {
+    width: min(980px, 92vw);
+    margin: 0 auto;
+    padding: 7.25rem 0 2.2rem;
+}
+
+section,
+aside {
+    margin: 1.4rem 0;
+    padding: 1.35rem;
+    border: 1px solid rgba(148, 163, 184, 0.35);
+    border-radius: 1rem;
+    background: rgba(15, 23, 42, 0.86);
+    box-shadow: 0 14px 36px rgba(2, 6, 23, 0.45);
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 0;
+    line-height: 1.25;
+    color: #f8fafc;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 1.35rem;
+    margin-bottom: 0.9rem;
+    position: relative;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 3.2rem;
+    height: 0.15rem;
+    margin-top: 0.45rem;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #38bdf8, #22c55e);
+}
+
+h3 {
+    font-size: 1.08rem;
+}
+
+em {
+    color: hsl(202, 88%, 78%);
+}
+
+strong {
+    color: #fbbf24;
+}
+
+/* ===== Хедер та навігація ===== */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 30;
+    padding: 0.85rem 1rem;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.35);
+    backdrop-filter: blur(14px);
+    background: rgba(15, 23, 42, 0.9);
+}
+
+header h1 {
+    width: min(980px, 92vw);
+    margin: 0 auto 0.6rem;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 0.45rem 0.85rem;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    text-decoration: none;
+    transition: 0.15s ease;
+}
+
+nav ul {
+    width: min(980px, 92vw);
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul > li {
+    display: inline-block;
+    margin-right: 0.45rem;
+}
+
+nav strong[aria-current="page"] {
+    display: inline-block;
+    padding: 0.45rem 0.85rem;
+    border-radius: 999px;
+    color: #f8fafc;
+    background: rgba(56, 189, 248, 0.18);
+    border: 1px solid rgba(56, 189, 248, 0.65);
+}
+
+a:link {
+    color: #38bdf8;
+}
+
+a:visited {
+    color: rgb(196, 132, 252);
+}
+
+a:hover {
+    color: #f97316;
+    background: rgba(15, 23, 42, 0.6);
+    border-color: rgba(148, 163, 184, 0.45);
+}
+
+a:active {
+    color: #fbbf24;
+    transform: translateY(1px);
+}
+
+a:focus {
+    outline: 2px solid #22c55e;
+    outline-offset: 2px;
+}
+
+/* ===== Головна секція ===== */
+blockquote {
+    margin: 1rem 0;
+    padding: 0.9rem 1rem;
+    border-left: 4px solid #38bdf8;
+    border-radius: 0.65rem;
+    background: rgba(2, 6, 23, 0.48);
+}
+
+ol {
+    padding-left: 1.2rem;
+}
+
+figure {
+    margin: 0;
+    position: relative;
+}
+
+figure figcaption {
+    margin-top: 0.65rem;
+    color: #cbd5e1;
+}
+
+section[aria-labelledby="photo-heading"] figure {
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+section[aria-labelledby="photo-heading"] img {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+}
+
+figure::after {
+    content: "PORTFOLIO";
+    position: absolute;
+    right: 0.8rem;
+    bottom: 2.2rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    letter-spacing: 0.03em;
+    background: rgba(2, 6, 23, 0.88);
+    border: 1px solid rgba(148, 163, 184, 0.55);
+    color: #e2e8f0;
+    z-index: 2;
+}
+
+/* ===== Таблиця ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 0.85rem;
+    border: 1px solid rgba(148, 163, 184, 0.4);
+}
+
+caption {
+    padding: 0.6rem;
+    text-align: left;
+    color: #cbd5e1;
+}
+
+th,
+td {
+    padding: 0.7rem 0.8rem;
+    border: 1px solid rgba(71, 85, 105, 0.7);
+}
+
+th {
+    background: rgba(30, 64, 175, 0.44);
+    color: #f8fafc;
+}
+
+tbody tr:nth-child(even) {
+    background: rgba(30, 41, 59, 0.56);
+}
+
+tbody tr:hover {
+    background: rgba(15, 118, 110, 0.44);
+}
+
+/* ===== Форма ===== */
+form {
+    margin-top: 1rem;
+}
+
+fieldset {
+    margin: 0 0 1rem;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    border: 1px solid rgba(148, 163, 184, 0.4);
+    background: rgba(2, 6, 23, 0.35);
+}
+
+legend {
+    padding: 0 0.45rem;
+    color: #f8fafc;
+}
+
+label {
+    font-size: 0.95rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    margin-top: 0.25rem;
+    padding: 0.6rem 0.7rem;
+    border-radius: 0.7rem;
+    border: 1px solid rgba(148, 163, 184, 0.55);
+    background: rgba(15, 23, 42, 0.88);
+    color: #f8fafc;
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 7rem;
+    max-height: 12rem;
+    overflow-y: auto;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #38bdf8;
+}
+
+button,
+input[type="submit"] {
+    padding: 0.66rem 1.2rem;
+    border: 0;
+    border-radius: 999px;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 600;
+    color: #0f172a;
+    background: linear-gradient(135deg, #38bdf8, #22c55e);
+    transition: transform 0.12s ease, box-shadow 0.15s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(34, 197, 94, 0.35);
+}
+
+button:active,
+input[type="submit"]:active {
+    transform: translateY(1px);
+}
+
+button:focus,
+input[type="submit"]:focus {
+    outline: 2px solid #e2e8f0;
+    outline-offset: 2px;
+}
+
+/* ===== Футер ===== */
+footer {
+    width: min(980px, 92vw);
+    margin: 0 auto 1.4rem;
+    padding: 1.1rem 1rem;
+    text-align: center;
+    border-top: 1px solid rgba(30, 64, 175, 0.55);
+    background: rgba(15, 23, 42, 0.65);
+    border-radius: 0.9rem;
+}
+
+#form-heading {
+    scroll-margin-top: 7.5rem;
+}
+
+@media (max-width: 700px) {
+    main {
+        padding-top: 8.4rem;
+    }
+}

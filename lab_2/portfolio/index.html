@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Коротко про Олександра Коровніченка та його навчання.">
+    <meta name="author" content="Олександр Коровніченко">
+    <title>Головна — Портфоліо Олександра Коровніченка</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Олександр Коровніченко</h1>
+        <nav aria-label="Головна навігація">
+            <ul>
+                <li><strong aria-current="page">Головна</strong></li>
+                <li><a href="about.html">Про мене</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section aria-labelledby="intro-heading">
+            <h2 id="intro-heading">Вітаю</h2>
+            <p>Я — <strong>Олександр Коровніченко</strong>. Зараз працюю <em>Python-розробником</em> та паралельно навчаюся.</p>
+            <blockquote>
+                <p>Проживаю в Києві.</p>
+            </blockquote>
+        </section>
+
+        <section aria-labelledby="focus-heading">
+            <h2 id="focus-heading">Що зараз</h2>
+            <ol>
+                <li>Навчання на 3 курсі.</li>
+                <li>Працюю на цікавому проекті.</li>
+            </ol>
+        </section>
+
+        <section aria-labelledby="photo-heading">
+            <h2 id="photo-heading">Фото</h2>
+            <figure>
+                <img src="images/portrait.jpeg" alt="Портрет Олександра Коровніченка">
+                <figcaption>Я — Олександр Коровніченко.</figcaption>
+            </figure>
+        </section>
+
+        <section aria-labelledby="clip-heading">
+            <h2 id="clip-heading">Відео</h2>
+            <figure>
+                <video controls width="640">
+                    <source src="video/intro.mp4" type="video/mp4">
+                    Ваш браузер не підтримує відтворення цього відео у вбудованому переглядачі.
+                </video>
+                <figcaption>Демонстраційне відео.</figcaption>
+            </figure>
+        </section>
+
+        <aside aria-labelledby="aside-quick">
+            <h2 id="aside-quick">Далі</h2>
+            <p>Освіта й навички — на сторінці <a href="about.html">Про мене</a>.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Олександр Коровніченко.</p>
+        <p><small>Навчальний проєкт на HTML5.</small></p>
+    </footer>
+</body>
+</html>
